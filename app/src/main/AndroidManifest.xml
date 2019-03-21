@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eecs481.mathinmotion" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_centered"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Home" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EightPuzzle"
+            android:label="@string/title_activity_eightpuzzle"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Home"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eecs481.mathinmotion.Home" />
+        </activity>
+        <activity
+            android:name=".AlgebraInAction"
+            android:label="@string/title_activity_algebrain_action"
+            android:parentActivityName=".Home"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eecs481.mathinmotion.Home" />
+        </activity>
+        <activity
+            android:name=".Instructions"
+            android:label="@string/title_activity_instructions"
+            android:parentActivityName=".Home"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eecs481.mathinmotion.Home" />
+        </activity>
+        <activity
+            android:name=".HighScore"
+            android:label="@string/title_activity_highscores"
+            android:parentActivityName=".Home"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eecs481.mathinmotion.Home" />
+        </activity>
+        <activity
+            android:name=".EightPuzzleSettingsActivity"
+            android:label="@string/title_activity_eight_puzzle_settings"
+            android:parentActivityName=".EightPuzzle"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.eecs481.mathinmotion.EightPuzzle" />
+        </activity>
+        <activity
+            android:name=".AIA_Settings"
+            android:label="@string/title_activity_aia__settings"
+            android:parentActivityName=".AlgebraInAction"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AlgebraInAction" />
+        </activity>
+    </application>
+
+</manifest>

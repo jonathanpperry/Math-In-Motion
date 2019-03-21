@@ -1,0 +1,384 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.eecs481.mathinmotion.AlgebraInAction">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/aia_input_area"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/aia_submit_area">
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/question_panel">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/input"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:id="@+id/generated_question"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/keypad"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/question_panel">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/panel" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp">
+
+                    <Button
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:text="@string/one"
+                        android:tag="1"
+                        android:background="@drawable/tile"
+                        android:onClick="clicker"
+                        android:id="@+id/button" />
+
+                    <Button
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:text="@string/two"
+                        android:tag="2"
+                        android:onClick="clicker"
+                        android:id="@+id/button2"
+                        android:background="@drawable/tile"/>
+
+                    <Button
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:text="@string/three"
+                        android:tag="3"
+                        android:onClick="clicker"
+                        android:id="@+id/button3"
+                        android:background="@drawable/tile"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp">
+
+                    <Button
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:tag="4"
+                        android:onClick="clicker"
+                        android:text="@string/four"
+                        android:id="@+id/button4"
+                        android:background="@drawable/tile"/>
+
+                    <Button
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:text="@string/five"
+                        android:tag="5"
+                        android:onClick="clicker"
+                        android:id="@+id/button5"
+                        android:background="@drawable/tile"/>
+
+                    <Button
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:text="@string/six"
+                        android:tag="6"
+                        android:onClick="clicker"
+                        android:id="@+id/button6"
+                        android:background="@drawable/tile"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp">
+
+                    <Button
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:text="@string/seven"
+                        android:tag="7"
+                        android:onClick="clicker"
+                        android:id="@+id/button7"
+                        android:background="@drawable/tile"/>
+
+                    <Button
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:text="@string/eight"
+                        android:tag="8"
+                        android:onClick="clicker"
+                        android:id="@+id/button8"
+                        android:background="@drawable/tile"/>
+
+                    <Button
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:text="@string/nine"
+                        android:tag="9"
+                        android:onClick="clicker"
+                        android:id="@+id/button9"
+                        android:background="@drawable/tile"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp">
+
+                    <Button
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:text="@string/backspace"
+                        android:id="@+id/backspace_button"
+                        android:onClick="bksp"
+                        android:background="@drawable/button"
+                        />
+
+                    <Button
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:text="@string/zero"
+                        android:tag="0"
+                        android:onClick="clicker"
+                        android:id="@+id/button0"
+                        android:background="@drawable/button"/>
+                    <Button
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:text="@string/aia_reset"
+                        android:id="@+id/reset_button"
+                        android:onClick="newProblem"
+                        android:background="@drawable/button"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/input_panel"
+            android:layout_below="@id/keypad">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/input"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+               >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:text="@string/answer_below"/>
+
+                <TextView android:id="@+id/aia_answer"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="260dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/consecutive"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_below ="@+id/input_panel"
+            android:gravity="center"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@id/aia_submit_area"
+        android:background="@color/orange">
+
+        <TextView android:id="@+id/aia_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/submit_answer"
+            android:textSize="26sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:onClick="submit"
+        />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trans_white"
+        android:visibility="gone"
+        android:id="@+id/answer_response" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/correct"
+        android:visibility="gone"
+        android:id="@+id/correct_signal"/>
+
+    <LinearLayout android:id="@+id/incorrect_response"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/incorrect"
+            android:id="@+id/incorrect_signal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="48sp"
+            android:text="@string/new_record"
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/new_record"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:id="@+id/aia_stats"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <RelativeLayout android:id="@+id/play_again"
+                android:layout_width="140dp"
+                android:layout_height="100dp">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:contentDescription="Play Again"
+                android:src="@drawable/button"
+                android:onClick="click_play_again" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="@string/play_again"
+                android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/quit"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp">
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:contentDescription="Quit Game"
+                    android:src="@drawable/button"
+                    android:onClick="click_quit" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="@string/quit"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

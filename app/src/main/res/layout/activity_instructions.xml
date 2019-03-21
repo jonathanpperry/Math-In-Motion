@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.eecs481.mathinmotion.Instructions">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eight_tiles"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:id="@+id/block1"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_one"
+            android:textSize="20sp"
+            android:id="@+id/block2"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView android:id="@+id/solution"
+            android:adjustViewBounds="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/solution"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_two"
+            android:id="@+id/block3"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_three"
+            android:id="@+id/block4"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <ImageView android:id="@+id/instr_ex"
+            android:adjustViewBounds="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/instr"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_four"
+            android:id="@+id/block5"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_five"
+            android:id="@+id/block6"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_six"
+            android:id="@+id/block7"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_seven"
+            android:id="@+id/block10"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/magic"
+            android:textStyle="bold"
+            android:id="@+id/blockM"
+            android:layout_marginTop="5dp"
+            android:textSize="50sp"
+            android:paddingTop="@dimen/activity_vertical_margin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_1"
+            android:id="@+id/blockM2"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_2"
+            android:id="@+id/blockM3"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_3"
+            android:id="@+id/blockM4"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_4"
+            android:id="@+id/blockM5"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/algebra"
+            android:textStyle="bold"
+            android:id="@+id/block8"
+            android:textSize="50sp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="@dimen/activity_vertical_margin"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_eight"
+            android:id="@+id/block9"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_nine"
+            android:id="@+id/block11"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_12"
+            android:id="@+id/block100"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_13"
+            android:id="@+id/block101"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_14"
+            android:id="@+id/block102"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_15"
+            android:id="@+id/block103"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_16"
+            android:id="@+id/block104"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_17"
+            android:id="@+id/block105"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_18"
+            android:id="@+id/block106"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_19"
+            android:id="@+id/block107"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_20"
+            android:id="@+id/block108"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_21"
+            android:id="@+id/block109"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_22"
+            android:id="@+id/block110"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_eleven"
+            android:id="@+id/block13"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_ten"
+            android:id="@+id/block12"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">M4TH 1N M0T10N</string>
+    <string name="title_activity_home">M4TH 1N M0T10N</string>
+    <string name="eight_tiles">8-Puzzle</string>
+    <string name="algebra">Algebra in Action</string>
+    <string name="instructions">Instructions</string>
+    <string name="highscores">High Scores</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_eightpuzzle">8-Puzzle</string>
+    <string name="title_activity_algebrain_action">Algebra in Action</string>
+    <string name="title_activity_test">test</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="title_activity_highscores">High Scores</string>
+    <string name="eight_puzzle_record">8-Puzzle Record</string>
+    <string name="aia_record">Algebra in Action Records</string>
+    <string name="eight_tiles_time">Time:</string>
+    <string name="eight_tiles_moves">Moves:</string>
+    <string name="eight_tiles_undo">Undo</string>
+    <string name="eight_tiles_reset">Reset</string>
+    <string name="instructions_one">The objective of the game is to rearrange the tiles such that they are arranged 1 through 8 as shown below:</string>
+    <string name="instructions_two">In order to play; move the phone in the direction in which you want to move the tile into the blank space.</string>
+    <string name="instructions_three">For example, in the situation shown below, Move the ‘2 tile’ up by moving the phone up.</string>
+    <string name="instructions_four">The beginning of every motion must be done in a strong but swift motion immediately followed by a return to center. After each move, you must wait at center for 2 seconds before continuing.</string>
+    <string name="instructions_five">If stuck, for a hint move the phone up and down in the z-direction.</string>
+    <string name="instructions_six">To undo a move, press the undo button.</string>
+    <string name="instructions_seven">In addition to the motion input, we have also added in the option to interface with the game by swiping on each of the tiles. This maintains the cognitive load of our, but decreases the physical requirements out of the user. This input option can be by accessing the Settings page from the 8-Puzzle gameplay screen. </string>
+    <string name="title_activity_eight_puzzle_settings">8-Puzzle Settings</string>
+    <string name="eight_puzzle_settings_gameplay_options">Gameplay Options</string>
+    <string name="eight_puzzle_settings_input_type">Input Type</string>
+    <string name="title_activity_aia__settings">AIA_Settings</string>
+    <string name="difficulty">Select Difficulty</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="edit_message">Enter Your Answer</string>
+    <string name="submit_answer">Tap Here to Submit</string>
+    <string name="correct_submission">Correct! Tap for Next Level</string>
+    <string name="incorrect_submission">Incorrect :( Try Again</string>
+    <string name="answer_below">Your Answer Below</string>
+
+    <string name="instructions_eight">The objective of the game is to solve the provided algebra problems within the allotted time by using either motion or the touch screen interface.</string>
+    <string name="instructions_nine">To answer the question, input numbers based on the descriptions below:</string>
+    <string name="instructions_ten">After you have inputted the desired number, press the submit button.
+        If your answer is correct you will move on to the next level, otherwise press the footer
+        until it is no longer red (only one tap should be needed) and then
+        re-enter a new solution.</string>
+    <string name="instructions_eleven">In addition, you may also press the numbers on the provided keypad to answer. To delete a number, press the delete button.
+        To get another problem, press reset. Resetting a question will be considered wrong and will reset your score back to 0. </string>
+
+
+    <string name="instructions_12">To input a:</string>
+    <string name="instructions_13">1, move the phone in the North West direction. </string>
+    <string name="instructions_14">2, move the phone Northward.</string>
+    <string name="instructions_15">3, move the phone in the North East direction.</string>
+    <string name="instructions_16">4, move the phone West.</string>
+    <string name="instructions_17">5, move the phone away from you.</string>
+    <string name="instructions_18">6, move the phone East.</string>
+    <string name="instructions_19">7, move the phone in the South West direction.</string>
+    <string name="instructions_20">8, move the phone South.</string>
+    <string name="instructions_21">9, move the phone in the South East direction.</string>
+    <string name="instructions_22">0, move the phone towards you.</string>
+
+    <string name="one">1</string>
+    <string name="aia_reset">Reset</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="backspace">Del</string>
+
+    <string name="magic">Magic Squares</string>
+    <string name="sub_1">For a more challenging game!!!!!</string>
+    <string name="sub_2">Select the Magic Squares type under settings. </string>
+    <string name="sub_3">The rules of this game are to arrange the numbers from 1 to n^2 such that the sum of the entries of any row, any column or any main diagonal is the same.  </string>
+
+    <string name="sub_4">Hint:
+        The sum should be n(n^2+1)/2. </string>
+
+    <string name="win_dialog_message">You won!</string>
+    <string name="win_dialog_title">Winner!</string>
+
+    <string name="new_record">New Record!</string>
+    <string name="play_again">Play Again</string>
+    <string name="quit">Quit</string>
+</resources>

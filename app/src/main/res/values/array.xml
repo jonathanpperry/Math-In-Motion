@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="input_choices">
+        <item>Motion</item>
+        <item>Swipe</item>
+    </string-array>
+
+    <string-array name="input_aia_choices">
+        <item>Motion</item>
+        <item>Touch</item>
+    </string-array>
+
+    <string-array name="difficulty_choices">
+        <item>Addition</item>
+        <item>Multiplication</item>
+        <item>Equations</item>
+        <item>Combination</item>
+    </string-array>
+
+    <string-array name="difficulty_levels">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+    <string-array name="game_choices">
+        <item>Original</item>
+        <item>Magic Squares</item>
+    </string-array>
+
+</resources>

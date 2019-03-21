@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:keepScreenOn="true"
+    tools:context="com.eecs481.mathinmotion.Home">
+
+    <ImageView android:id="@+id/home_title"
+        android:adjustViewBounds="true"
+        android:layout_width="475dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/home_title" />
+
+    <RelativeLayout android:id="@+id/home_eight_puzzle"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/home_title" >
+
+        <ImageView android:id="@+id/eight_puzzle_launch"
+            android:adjustViewBounds="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/eight_tiles"
+            android:src="@drawable/home_button"
+            android:onClick="eight_puzzle_launch" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="@string/eight_tiles"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/home_algebra"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/home_eight_puzzle" >
+
+        <ImageView android:id="@+id/algebra_launch"
+            android:adjustViewBounds="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/algebra"
+            android:src="@drawable/home_button"
+            android:onClick="algebra_launch" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="@string/algebra"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/home_instructions"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/home_algebra" >
+
+        <ImageView android:id="@+id/instructions_launch"
+            android:adjustViewBounds="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/instructions"
+            android:src="@drawable/home_button"
+            android:onClick="instructions_launch" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="@string/instructions"/>
+
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/home_highscores"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/home_instructions" >
+
+        <ImageView android:id="@+id/highscores_lauch"
+            android:adjustViewBounds="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/highscores"
+            android:src="@drawable/home_button"
+            android:onClick="highscores_launch" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="@string/highscores"/>
+
+    </RelativeLayout>
+</RelativeLayout>

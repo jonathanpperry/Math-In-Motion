@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="Gameplay Options" >
+
+        <ListPreference
+            android:key="diff_type"
+            android:title="Problem Type"
+            android:entries="@array/difficulty_choices"
+            android:entryValues="@array/difficulty_choices"
+            android:summary = "Press to change type of questions"
+            android:defaultValue="Addition" />
+
+        <ListPreference
+            android:key="diff_level"
+            android:title="Difficulty Level"
+            android:entries="@array/difficulty_levels"
+            android:entryValues="@array/difficulty_levels"
+            android:summary = "Press to change difficulty of questions"
+            android:defaultValue="Easy" />
+
+        <ListPreference
+            android:key="input_type_aia"
+            android:title="Input"
+            android:entries="@array/input_aia_choices"
+            android:entryValues="@array/input_aia_choices"
+            android:summary = "Press to change physical input type"
+            android:defaultValue="Motion" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
